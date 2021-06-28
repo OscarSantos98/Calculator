@@ -145,7 +145,7 @@ namespace Calculator
             this.btnDecimal.Name = "btnDecimal";
             this.btnDecimal.Size = new System.Drawing.Size(94, 64);
             this.btnDecimal.TabIndex = 31;
-            this.btnDecimal.Text = ".";
+            this.btnDecimal.Text = ",";
             this.btnDecimal.UseVisualStyleBackColor = true;
             this.btnDecimal.Click += new System.EventHandler(this.btnDecimal_Click);
             // 
@@ -404,6 +404,7 @@ namespace Calculator
             // btnPercent
             // 
             this.btnPercent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnPercent.Enabled = false;
             this.btnPercent.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnPercent.Location = new System.Drawing.Point(3, 226);
             this.btnPercent.Name = "btnPercent";
@@ -416,6 +417,7 @@ namespace Calculator
             // button7
             // 
             this.button7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button7.Enabled = false;
             this.button7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button7.Location = new System.Drawing.Point(303, 199);
             this.button7.Name = "button7";
@@ -426,6 +428,7 @@ namespace Calculator
             // button6
             // 
             this.button6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button6.Enabled = false;
             this.button6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button6.Location = new System.Drawing.Point(203, 199);
             this.button6.Name = "button6";
@@ -436,6 +439,7 @@ namespace Calculator
             // button5
             // 
             this.button5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button5.Enabled = false;
             this.button5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button5.Location = new System.Drawing.Point(103, 199);
             this.button5.Name = "button5";
@@ -446,6 +450,7 @@ namespace Calculator
             // button4
             // 
             this.button4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button4.Enabled = false;
             this.button4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button4.Location = new System.Drawing.Point(3, 199);
             this.button4.Name = "button4";
@@ -469,6 +474,7 @@ namespace Calculator
             // btnHistory
             // 
             this.btnHistory.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnHistory.Enabled = false;
             this.btnHistory.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnHistory.Location = new System.Drawing.Point(303, 3);
             this.btnHistory.Name = "btnHistory";
@@ -480,17 +486,18 @@ namespace Calculator
             // button2
             // 
             this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button2.Enabled = false;
             this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button2.Location = new System.Drawing.Point(203, 3);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(94, 53);
             this.button2.TabIndex = 2;
-            this.button2.Text = "Tab";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // btnType
             // 
             this.btnType.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnType.Enabled = false;
             this.btnType.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnType.Location = new System.Drawing.Point(3, 3);
             this.btnType.Name = "btnType";

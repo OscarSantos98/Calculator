@@ -48,7 +48,8 @@ namespace Calculator
         private void btnPercent_Click(object sender, EventArgs e)
         {
             string recent_val = labelScreen.Text;
-            int val = Convert.ToInt32(recent_val);
+            double val = Convert.ToDouble(recent_val)/100;
+            labelOperation.Text += $"{val}";
         }
 
         private void btnSign_Click(object sender, EventArgs e)
@@ -61,8 +62,7 @@ namespace Calculator
         private void btnDecimal_Click(object sender, EventArgs e)
         {
             string recent_val = labelScreen.Text;
-
-            labelScreen.Text = $"{recent_val}.";
+            labelScreen.Text = $"{recent_val},";
         }
 
         private void btnEquals_Click(object sender, EventArgs e)
@@ -115,6 +115,7 @@ namespace Calculator
 
         private void btnSqrt_Click(object sender, EventArgs e)
         {
+            labelOperation.Text = $"√({labelScreen.Text}) ";
             string recent_val = labelScreen.Text;
             double val = Math.Sqrt(Convert.ToDouble(recent_val));
             labelScreen.Text = val.ToString();
@@ -122,6 +123,7 @@ namespace Calculator
 
         private void btnExp_Click(object sender, EventArgs e)
         {
+            labelOperation.Text = $"sqr({labelScreen.Text}) ";
             string recent_val = labelScreen.Text;
             double val = Math.Pow(Convert.ToDouble(recent_val),2);
             labelScreen.Text = val.ToString();
@@ -129,6 +131,7 @@ namespace Calculator
 
         private void btnInv_Click(object sender, EventArgs e)
         {
+            labelOperation.Text = $"1/({labelScreen.Text}) ";
             string recent_val = labelScreen.Text;
             double val = 1/Convert.ToDouble(recent_val);
             labelScreen.Text = val.ToString();
