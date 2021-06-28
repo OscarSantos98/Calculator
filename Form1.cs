@@ -68,6 +68,11 @@ namespace Calculator
         private void btnEquals_Click(object sender, EventArgs e)
         {
             operation = labelOperation.Text;
+            if(operation.Length - 2 < 0)
+            {
+                labelOperation.Text = $"{0} =";
+                return;
+            }
             string leftVal = operation.Substring(0, operation.Length - 2);
             string recentVal = labelScreen.Text;
             labelOperation.Text += $"{labelScreen.Text} = ";
@@ -87,6 +92,7 @@ namespace Calculator
             {
                 labelScreen.Text = (Convert.ToDouble(leftVal) / Convert.ToDouble(recentVal)).ToString();
             }
+            
         }
 
         private void btnPlus_Click(object sender, EventArgs e)

@@ -21,7 +21,7 @@ Clone the repo
 
 ## Release History
 
-* 0.1.0
+* 0.1.1
     * Calculator under development.
 
 ## Follow me at
